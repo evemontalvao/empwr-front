@@ -1,0 +1,57 @@
+.Search {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	font-size: 24px;
+	color: $blue;
+	font-weight: 200;
+	padding: 0 0 10px 10px;
+
+	&:focus {
+		outline: 0;
+	}
+
+	&_fieldset {
+		width: 100%;
+		border: none;
+		float: left;
+	}
+
+	&_icon {
+		position: absolute;
+		right: 0;
+		color: $blue;
+		font-size: 23px;
+		top: 6px;
+		cursor: pointer;
+		transition: all .3s linear;
+
+		&.search {
+			right: 40px;
+		}
+
+		&.slider {
+			right: 10px;
+		}
+
+		&:hover {
+			color: $light_blue;
+		}
+	}
+}
+
+::-webkit-input-placeholder {
+    color:$blue;
+}
+
+::-moz-placeholder {
+    color:$blue;
+}
+
+::-ms-placeholder {
+    color:$blue;
+}
+
+::placeholder {
+    color:$blue;
+}

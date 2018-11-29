@@ -1,0 +1,40 @@
+@import './variables.scss';
+@import './reset.scss';
+@import './fonts.scss';
+
+@import '../containers/TopBar/TopBar.scss';
+@import '../containers/Footer/Footer.scss';
+@import '../containers/Header/Header.scss';
+@import '../components/Search/Search.scss';
+
+@import '../components/Menu/Menu.scss';
+@import '../components/NavBar/NavBar.scss';
+@import '../components/Product/Product.scss';
+
+@import '../parts/Input/Input.scss';
+@import '../parts/NavItem/NavItem.scss';
+@import '../parts/Title/Title.scss';
+@import '../parts/H1Title/H1Title.scss';
+@import '../parts/List/List.scss';
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.search_container {
+	lost-column: 4/12;
+	lost-offset: 4/12;
+	position: relative;
+	margin-top: 80px;
+}
+.container {
+	lost-center: 1113px;
+}
+
+.section {
+	margin: 30px 0;
+}

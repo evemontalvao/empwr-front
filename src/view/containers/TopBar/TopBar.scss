@@ -1,0 +1,20 @@
+.topBar {
+	width: 100%;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	position: absolute;
+	z-index: 2;
+	color: #fff;
+
+	&_searchColumn {
+		lost-column: 4/12
+	}
+
+	&_logoColumn {
+		lost-column: 1/12
+	}
+
+	&_navColumn {
+		float: right;
+	}
+}

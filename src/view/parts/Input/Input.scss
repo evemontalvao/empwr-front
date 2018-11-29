@@ -1,0 +1,16 @@
+.input {
+	width: 100%;
+	padding: 10px 15px;
+	border: none;
+	color: $inputText;
+	font-size: $textFontSize;
+	border-bottom: 1px solid $default;
+	border-radius: 2px;
+
+	&:focus {
+		outline-style:none;
+		box-shadow:none;
+		border-color:transparent;
+		box-shadow: $defaultShadow;
+	}
+}

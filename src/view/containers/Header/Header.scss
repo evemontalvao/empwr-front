@@ -1,0 +1,111 @@
+.Header {
+
+	&_column {
+		position: relative;
+		lost-column: 1/4 0 0px;
+		height: 70vh;
+		transition: all .6s linear;
+		cursor: pointer;
+
+
+		&.magenta {
+			background-color: $magenta;
+			background-image: url('img/clothes.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 272px;
+			&:hover {
+				background-position: center 35px;
+			}
+
+			& ul {
+				position: absolute;
+				bottom: 30px;
+				left: 0;
+				right: 0;
+				margin: 0 auto 0 auto;
+				color: #fff;
+			}
+		}
+
+		&.white {
+
+			background-color: #fff;
+			background-image: url('img/object.png');
+			background-size: 140px;
+			background-repeat: no-repeat;
+			background-position: center top;
+			&:hover {
+				background-position: 30px top;
+			}
+
+			& ul {
+				color: $default;
+				position: absolute;
+				top: 100px;
+				right: 10px;
+			}
+		}
+
+		&.blue {
+			background-color: $blue;
+			background-image: url('img/tools.png');
+			background-repeat: no-repeat;
+			background-position: center bottom;
+			background-size: 212px;
+
+			&:hover {
+				background-position: center bottom -80px;
+			}
+
+			& ul {
+				color: #fff;
+				position: absolute;
+				bottom: 170px;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+			}
+		}
+
+		&.light_blue {
+			background-color: $light_blue;
+			background-image: url('img/food.png');
+			background-repeat: no-repeat;
+			background-position: center bottom;
+
+			&:hover {
+				background-position: 120px bottom;
+			}
+
+			& ul {
+				color: $default;
+				position: absolute;
+				bottom: 60px;
+				left: 20px;
+			}
+		}
+	}
+
+	// &:hover > *:not(:hover) {
+	// 	lost-column: 0.6666665/4 0 0px;
+	// }
+
+	// &:hover > *:hover {
+	// 	lost-column: 2/4 0 0px;
+	// }
+
+	& ul {
+		width: 200px;
+		opacity: 0;
+		text-transform: uppercase;
+		font-size: 16px;
+		letter-spacing: 2px;
+		line-height: 1.5;
+		transition: all .4s linear;
+	}
+
+	&:hover > *:hover ul {
+		opacity: 1;
+	}
+}

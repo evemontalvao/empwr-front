@@ -1,0 +1,62 @@
+.Menu {
+	lost-column: 10/12;
+	svg {
+		font-size: 24px;
+		font-weight: 100;
+		margin: 0 0 10px 0;
+		cursor: pointer;
+	}
+
+	&_column {
+		z-index: 2;
+		position: fixed;
+		top: 0;
+		left: -250px;
+		width: 250px;
+		background-color: #272727;
+		height: 100%;
+		padding: 20px 30px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		transition: all .6s linear;
+
+		&.active {
+			left: 0;
+
+			&:after {
+				content: "";
+				top: 0;
+				z-index: 1;
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, .4);
+				transition: all .4s linear;
+			}
+		}
+
+		& a {
+			color: #fff;
+			transition: all .3s linear;
+		}
+
+		& a:hover {
+			color: $blue;
+		}
+	}
+
+	&_closeColumn {
+		float: right;
+	}
+
+	&_logoColumn {
+		float: left;
+		clear: both;
+		width: 100px;
+		margin: 0 50px 30px 0;
+
+		& img {
+			width: 100%;
+		}
+	}
+}
